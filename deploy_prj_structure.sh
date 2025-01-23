@@ -37,15 +37,12 @@ with DAG(
 ) as dag:
     start = DummyOperator(task_id='start')" > dags/example_dag.py
 
-# Create plugins directory and example plugin
 mkdir -p plugins
 echo "# Example plugin file" > plugins/example_plugin.py
 
-# Create requirements.txt file
 echo "# Add Python dependencies here, e.g.:
 pandas
 requests" > requirements.txt
 
-# Confirm the structure
-echo "Project structure created successfully:"
+echo "Project structure created successfully."
 
